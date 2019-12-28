@@ -14,7 +14,10 @@ export const Navbar = () => (
             </Link>
             <Link to='/planets'>
                 <Menu.Item name="planets"></Menu.Item>
-            </Link>    
+            </Link>
+            <Link to='/starships'>
+                <Menu.Item name="starships"></Menu.Item>
+            </Link>        
         </Container>
     </Menu>
 )

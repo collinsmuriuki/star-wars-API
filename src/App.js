@@ -9,10 +9,12 @@ import { Navbar } from './components/navbar/navbar.component';
 import { Home } from './components/home/home.component';
 import { People } from './components/people/people.component';
 import { Planets } from './components/planets/planets.component';
+import { Starships } from './components/starships/starships.component';
 
 const App = () => {
   const [people, setPeople] = useState([]);
   const [planets, setPlanets] = useState([]);
+  const [starships, setStarships] = useState([]);
   const [loading, setLoading] = useState([true])
 
   useEffect(() => {
@@ -30,8 +32,16 @@ const App = () => {
       setLoading(false)
     }
 
+    async function fetchStarships() {
+      let result = await fetch('https://swapi.co/api/starships/');
+      let data = await result.json();
+      setStarships(data.results);
+      setLoading(false)
+    }
+
     fetchPeople();
     fetchPlanets();
+    fetchStarships();
   }, [])
     
   return(
@@ -53,6 +63,9 @@ const App = () => {
             </Route>
             <Route exact path='/planets'>
               <Planets data={planets} />
+            </Route>
+            <Route exact path='/starships'>
+              <Starships data={starships} />
             </Route>
           </Switch>
           )}
