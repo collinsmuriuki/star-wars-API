@@ -1,13 +1,20 @@
 import React from 'react';
 import { Menu, Container } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import './navbar.styles.css';
 
 export const Navbar = () => (
     <Menu className="navbar" inverted>
         <Container>
-            <Menu.Item name="star wars api"></Menu.Item>
-            <Menu.Item name="people"></Menu.Item>
-            <Menu.Item name="planets"></Menu.Item>
+            <Link to='/'>
+                <Menu.Item name="star wars api"></Menu.Item>
+            </Link>
+            <Link to='/people'>
+                <Menu.Item name="people"></Menu.Item>
+            </Link>
+            <Link to='/planets'>
+                <Menu.Item name="planets"></Menu.Item>
+            </Link>    
         </Container>
     </Menu>
 )

@@ -1,8 +1,14 @@
 /* eslint-disable no-useless-constructor */
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Container } from 'semantic-ui-react';
+
 
 import { Navbar } from './components/navbar/navbar.component';
+import { Home } from './components/home/home.component';
+import { People } from './components/people/people.component';
+import { Planets } from './components/planets/planets.component';
 
 const App = () => {
   const [people, setPeople] = useState([]);
@@ -27,9 +33,24 @@ const App = () => {
   }, [])
     
   return(
-    <div className="App">
-      <Navbar />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Container>
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route exact path='/people'>
+              <People />
+            </Route>
+            <Route exact path='/planets'>
+              <Planets />
+            </Route>
+          </Switch>
+        </Container>
+      </Router>
+    </>
   )
 
 }
