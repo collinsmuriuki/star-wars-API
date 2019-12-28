@@ -2,7 +2,7 @@
   "name": "star-wars-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://collinsmuriuki.github.io/star-wars-API",
+  "homepage": "https://collinsmuriuki.github.io/star-wars-API/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
