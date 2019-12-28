@@ -4,7 +4,7 @@ import './starships.styles.css';
 
 export const Starships = ({data}) => (
     <>
-    <h1>People</h1>
+    <h1>Starships</h1>
         <Grid columns={3}>
             {data.map((starship, i) => (
             <Grid.Column key={i}>
