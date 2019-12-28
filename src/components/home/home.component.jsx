@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Home = props =>  {
+export const Home = () =>  {
     return (
         <div className="intro">
           <h1>Star Wars API</h1>
