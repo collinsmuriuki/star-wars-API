@@ -2,7 +2,7 @@ import React from 'react';
 import { Menu, Container } from 'semantic-ui-react';
 import './navbar.styles.css';
 
-export const Navbar = props => (
+export const Navbar = () => (
     <Menu className="navbar" inverted>
         <Container>
             <Menu.Item name="star wars api"></Menu.Item>
