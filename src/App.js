@@ -55,16 +55,16 @@ const App = () => {
             </Dimmer>
           ): (
             <Switch>
-            <Route exact path='/'>
+            <Route exact path='/star-wars-API'>
               <Home />
             </Route>
-            <Route exact path='/people'>
+            <Route exact path='/star-wars-API/people'>
               <People data={people} />
             </Route>
-            <Route exact path='/planets'>
+            <Route exact path='/star-wars-API/planets'>
               <Planets data={planets} />
             </Route>
-            <Route exact path='/starships'>
+            <Route exact path='/star-wars-API/starships'>
               <Starships data={starships} />
             </Route>
           </Switch>

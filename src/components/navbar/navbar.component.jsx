@@ -6,16 +6,16 @@ import './navbar.styles.css';
 export const Navbar = () => (
     <Menu className="navbar" inverted>
         <Container>
-            <Link to='/'>
+            <Link to='/star-wars-API'>
                 <Menu.Item name="star wars api"></Menu.Item>
             </Link>
-            <Link to='/people'>
+            <Link to='/star-wars-API/people'>
                 <Menu.Item name="people"></Menu.Item>
             </Link>
-            <Link to='/planets'>
+            <Link to='/star-wars-API/planets'>
                 <Menu.Item name="planets"></Menu.Item>
             </Link>
-            <Link to='/starships'>
+            <Link to='/star-wars-API/starships'>
                 <Menu.Item name="starships"></Menu.Item>
             </Link>        
         </Container>
