@@ -22,8 +22,6 @@ export const Starships = ({data}) => (
                             <p>{starship.max_atmosphering_speed}</p>
                             <strong>Passengers</strong>
                             <p>{starship.passengers}</p>
-                            <strong>Capacity</strong>
-                            <p>{starship.capacity}</p>
                         </Card.Description>
                     </Card.Content>
                 </Card>
